@@ -1,0 +1,137 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: poppins;
+}
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+
+#main {
+	display: flex;
+	height: 100vh;
+	width: 100%;
+}
+
+#left {
+	position: relative;
+	height: 100vh;
+	width: 40%;
+}
+#right {
+	width: 60%;
+	height: 100vh;
+}
+
+#rtop {
+	display: flex;
+	height: 50%;
+	width: 100%;
+}
+
+#rbottom {
+	height: 50%;
+	width: 100%;
+	background-color: gray;
+	background-image: url(https://images.unsplash.com/photo-1619241638225-14d56e47ae64?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+	background-size: cover;
+	background-position: center;
+}
+
+#rtopleft {
+	height: 100%;
+	width: 45%;
+	background-image: url(https://images.unsplash.com/photo-1582979512210-99b6a53386f9?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+	background-size: cover;
+	background-position: bottom;
+}
+
+#rtopright {
+	height: 100%;
+	width: 55%;
+	background-image: url(https://images.unsplash.com/photo-1599076480086-fd46f116eb8c?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+	background-position: center;
+	background-size: cover;
+}
+#lnav {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+}
+#lnavr {
+	display: flex;
+	align-items: center;
+}
+
+#lnavr a {
+	text-decoration: none;
+	margin-right: 20px;
+	font-size: 19px;
+	color: black;
+	font-weight: 500;
+}
+
+#lnavr i {
+	color: blue;
+	font-size: 26px;
+	cursor: pointer;
+}
+
+#lnav i {
+	cursor: pointer;
+	font-size: 25px;
+}
+
+#left #textCenter {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#textCenter h1 {
+	font-size: 80px;
+	font-weight: 780;
+}
+
+#textCenter p {
+	opacity: 0.8;
+	font-size: 14px;
+	line-height: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#textCenter a {
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 15px;
+	color: black;
+	border-bottom: 1px solid black;
+}
+
+#rtop1 img {
+	background-image: url(https://images.unsplash.com/photo-1582979512210-99b6a53386f9?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+	background-position: bottom;
+	background-size: cover;
+}
+
+@media (max-width: 500px) {
+	#main {
+		flex-direction: column;
+	}
+
+	#left {
+		height: 3000px;
+		width: 100%;
+	}
+
+	#right {
+		width: 100%;
+	}
+}
